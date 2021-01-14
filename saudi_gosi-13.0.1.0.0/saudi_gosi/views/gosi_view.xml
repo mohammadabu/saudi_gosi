@@ -55,7 +55,7 @@
                 </p>
             </field>
         </record>
-        <menuitem id="gosi_employee" name="GOSI Register" parent="hr_payroll_community.menu_hr_payroll_community_root"
+        <menuitem id="gosi_employee" name="GOSI Register" parent="hr_payroll.menu_hr_payroll_root"
                   action="action_view_employee_gosi" sequence="2"/>
 
          <record model="ir.ui.view" id="hr_employee_inherited_form_view">
@@ -84,7 +84,7 @@
         <record model="ir.ui.view" id="hr_payslip_inherited_form_view">
             <field name="name">hr.payslip.form.view</field>
             <field name="model">hr.payslip</field>
-            <field name="inherit_id" ref="hr_payroll_community.view_hr_payslip_form"/>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
             <field name="arch" type="xml">
                      <xpath expr="//field[@name='struct_id']" position="after">
                          <field name="gosi_no"></field>
