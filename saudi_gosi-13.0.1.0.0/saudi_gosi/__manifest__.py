@@ -12,7 +12,7 @@
     'data': [
              'views/gosi_view.xml',
              'views/sequence.xml',
-             'data/rule.xml',
+            #  'data/rule.xml',
              'security/ir.model.access.csv',
             ],
     'demo': [],
